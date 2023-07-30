@@ -1,5 +1,7 @@
 import { db } from "@/db"
 
+export const runtime = "edge"
+
 export default async function UserPage() {
   const users = await db.query.users.findMany({
     with: {
@@ -10,7 +12,7 @@ export default async function UserPage() {
   return (
     <>
       <div className="grid grid-cols-2 gap-x-5 gap-y-5 my-5 mx-auto max-w-2xl">
-        {users.map((user) => (
+        {(await users).map((user) => (
           <div key={user.id} className="bg-blue-100 rounded-md p-5">
             <h1 className="text-lg font-bold">{user.name}</h1>
             <ul>
