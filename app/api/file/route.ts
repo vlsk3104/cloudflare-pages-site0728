@@ -1,4 +1,4 @@
-import r2Client from '@/app/lib/r2Client'
+import r2Client from '@/lib/r2Client'
 import { PutObjectCommand } from '@aws-sdk/client-s3'
 import { NextRequest, NextResponse } from 'next/server'
 
