@@ -1,12 +1,12 @@
 {
   "version": "5",
-  "dialect": "mysql",
+  "dialect": "sqlite",
   "entries": [
     {
       "idx": 0,
       "version": "5",
-      "when": 1690685179175,
-      "tag": "0000_bright_jamie_braddock",
+      "when": 1691805722412,
+      "tag": "0000_strong_valeria_richards",
       "breakpoints": true
     }
   ]

@@ -26,7 +26,7 @@ export default function Home() {
       body: formData,
     });
 
-    const data = await response.json()
+    const data = await response.json() as any
 
     setImageUrl(data.url)
   }
