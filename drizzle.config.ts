@@ -2,7 +2,7 @@ import type { Config } from "drizzle-kit"
 
 const drizzleConfig = {
   schema: "./db/schema.ts",
-  out: "./db/migrations",
+  out: "./migrations",
   breakpoints: true,
 } satisfies Config
 
